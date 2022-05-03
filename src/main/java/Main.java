@@ -4,43 +4,35 @@ public class Main {
 
     public static void main(String[] args) {
         // start section
+        int[] inputArray;
+        int[] resultArray;
+        int resultArraySize = 0;
+        int resultArrayCounter = 0;
 
-        System.out.print("Enter size: ");
-        Scanner console = new Scanner(System.in);
-        int size = console.nextInt();
-        System.out.println("Entered size: " + size);
+        ConsoleController consoleController = new ConsoleController();
 
-        int[] inputArray = new int[size];
-        for (int i = 0; i < inputArray.length; i++) {
-            System.out.print("Enter value: ");
-            inputArray[i] = console.nextInt();
-        }
-        int countOfPositiveElm = 0;
-        for (int x = 0; x < inputArray.length; x++) {
-            if (inputArray[x] > 0) {
-                countOfPositiveElm++;
+        inputArray = consoleController.getArrayConsole();
+
+        consoleController.outNl("Input Array: ");
+        consoleController.resultArrayOut(inputArray);
+
+        for (int i : inputArray) {
+            if (i > 0) {
+                resultArraySize++;
             }
-
         }
-        int [] resultArray = new int[countOfPositiveElm];
-        int count = 0;
-        for (int x =0; x < inputArray.length; x++){
-            if (inputArray[x] > 0) {
-                resultArray[count] = inputArray[x];
-                count++;
+
+        resultArray = new int[resultArraySize];
+
+        for (int i : inputArray) {
+            if (i > 0) {
+                resultArray[resultArrayCounter] = i;
+                resultArrayCounter++;
             }
-
-    }
-        System.out.println("inputArray ");
-        for (int i : inputArray){
-            System.out.print("[" + i + "]");
         }
-        System.out.println ();
-        System.out.println("resultArray ");
-        for (int x : resultArray) {
-            System.out.print("[" + x + "]");
 
-        }
+        consoleController.outNl("Result array:");
+        consoleController.resultArrayOut(resultArray);
 
 // end section
 
