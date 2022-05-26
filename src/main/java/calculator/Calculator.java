@@ -1,13 +1,15 @@
+package calculator;
+
 public class Calculator {
 
-    int sum(int... values) {
+   public int sum(int... values) {
         int sum = 0;
         for (int x : values) {
             sum += x;
         }
         return sum;
     }
-    double sum(double... values) {
+   public double sum(double... values) {
         double sum = 1;
         for (double x : values) {
             sum *= x;
@@ -15,14 +17,14 @@ public class Calculator {
         return sum;
     }
 
-    int dep(int... values) {
+    public int dep(int... values) {
         int dep = 0;
         for (int x : values) {
             dep = x - dep;
         }
         return dep;
     }
-    double dep(double... values) {
+    public double dep(double... values) {
         double dep = 1;
         for (double x : values) {
             dep -= x;
@@ -30,7 +32,7 @@ public class Calculator {
         return dep;
     }
 
-    int mult(int... values) {
+    public int mult(int... values) {
         int mult = 1;
         for (int x : values) {
             mult *= x;
@@ -38,7 +40,7 @@ public class Calculator {
         return mult;
     }
 
-    double mult(double... values) {
+    public double mult(double... values) {
         double mult = 1;
         for (double x : values) {
             mult *= x;
@@ -46,7 +48,7 @@ public class Calculator {
         return mult;
     }
 
-    int divide(int... values) {
+     public int divide(int... values) {
         int divide = 1;
         for (int x : values) {
             divide/= x;
@@ -54,7 +56,7 @@ public class Calculator {
         return divide;
     }
 
-    double divide(double... values) {
+    public double divide(double... values) {
         double divide = 1;
         for (double x : values) {
             divide/= x;

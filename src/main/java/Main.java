@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import calculator.Calculator;
 
 public class Main {
 
@@ -9,10 +9,6 @@ public class Main {
         System.out.println("mult  " + calculator.mult(2.2,3.1));
         System.out.println("divide  "+calculator.divide(2.1,4.2));
 
-//        Cat cat = new Cat();
-//
-//        cat.name = "Barsik";
-//        cat.say(1);
-//        cat.say("za");
+
     }
 }
