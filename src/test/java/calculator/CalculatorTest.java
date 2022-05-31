@@ -17,7 +17,7 @@ public class CalculatorTest {
 
     @Test
     public void testSum() {
-        Assert.assertEquals(3, calculator.getSum("lmvm;v ;ls ;lsje 10l;k;df )(%U@10kmo 2"));
+        Assert.assertEquals(2, calculator.getSum("jfkdshjkfdhjk3h32kl4j32k%^^)(%$#@$@#$@#10o2"));
     }
 
 }
